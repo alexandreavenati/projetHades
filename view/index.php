@@ -10,6 +10,10 @@
 </head>
 
 <body>
+<header>
+    <?php require_once('partial/index-header.php'); ?>
+</header>
+
 
 </body>
 
