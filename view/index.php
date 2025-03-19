@@ -14,6 +14,10 @@
     <?php require_once('partial/index-header.php'); ?>
 </header>
 
+<main>
+    
+</main>
+
 
 </body>
 
