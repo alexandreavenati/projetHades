@@ -45,30 +45,30 @@ header div:nth-of-type(2) ul li {
   height: 2px;
 }
 
-main section section:nth-of-type(1) {
+main section:nth-of-type(1) section:nth-of-type(1) {
   color: rgb(255, 196, 0);
   position: relative;
   height: 120vh;
   background-color: rgb(169, 23, 45);
 }
-main section section:nth-of-type(1) div:nth-of-type(2) {
+main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) {
   position: absolute;
   top: 30%;
   right: 5%;
   width: 40%;
 }
-main section section:nth-of-type(1) div:nth-of-type(2) h3 {
+main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) h3 {
   font-family: "Hades";
   font-size: 3rem;
   padding-bottom: 5%;
   text-align: center;
 }
-main section section:nth-of-type(1) div:nth-of-type(2) p {
+main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) p {
   font-family: "Poppins";
   font-size: 1.3rem;
   text-align: right;
 }
-main section section:nth-of-type(1) div:nth-of-type(1) {
+main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(1) {
   position: absolute;
   top: -8%;
   left: 5%;
@@ -161,6 +161,39 @@ main section section:nth-of-type(4) div:nth-of-type(2) {
   top: 32%;
   right: 20%;
   transform: scale(3);
+}
+
+main section:nth-of-type(2) section:nth-of-type(1) {
+  background-image: url(../img/fond2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh;
+  position: relative;
+}
+main section:nth-of-type(2) section:nth-of-type(1) > div h3 {
+  font-family: "Hades";
+  font-size: 3rem;
+  padding: 10px;
+}
+main section:nth-of-type(2) section:nth-of-type(1) > div:nth-of-type(1) {
+  color: rgb(227, 195, 32);
+  width: 20%;
+}
+main section:nth-of-type(2) section:nth-of-type(1) > div:nth-of-type(1) h3 {
+  position: absolute;
+  top: 36%;
+  left: 5%;
+  background-color: rgb(53, 117, 213);
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+}
+main section:nth-of-type(2) section:nth-of-type(1) > div:nth-of-type(1) div {
+  width: 20%;
+  position: absolute;
+  top: -2%;
+  left: 5%;
 }
 
 main section h2 {
