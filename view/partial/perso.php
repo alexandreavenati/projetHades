@@ -1,1 +1,4 @@
-<?php require_once('section1.php'); ?>
+<?php 
+require_once('section1.php'); 
+require_once('section2.php');
+?>
