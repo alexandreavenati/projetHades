@@ -53,7 +53,7 @@ main section section:nth-of-type(1) {
 }
 main section section:nth-of-type(1) div:nth-of-type(2) {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 5%;
   width: 40%;
 }
@@ -73,6 +73,35 @@ main section section:nth-of-type(1) div:nth-of-type(1) {
   top: -8%;
   left: 5%;
   width: 45%;
+}
+
+main section section:nth-of-type(2) {
+  color: rgb(147, 12, 12);
+  background-color: rgb(219, 182, 0);
+  height: 120vh;
+  position: relative;
+}
+main section section:nth-of-type(2) div:nth-of-type(1) {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 40%;
+}
+main section section:nth-of-type(2) div:nth-of-type(1) h3 {
+  font-family: "Hades";
+  font-size: 3rem;
+  padding-bottom: 5%;
+  text-align: center;
+}
+main section section:nth-of-type(2) div:nth-of-type(1) p {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+}
+main section section:nth-of-type(2) div:nth-of-type(2) {
+  position: absolute;
+  top: 32%;
+  right: 20%;
+  transform: scale(3);
 }
 
 main section h2 {
