@@ -18,6 +18,8 @@ header {
         right: 8%;
         top: 20%;
         opacity: 0;
+        transition: all .8s ease;
+        z-index: -1;
 
         nav {
             ul {
