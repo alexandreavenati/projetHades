@@ -21,7 +21,7 @@
         <?php require_once('partial/index-main.php'); ?>
     </main>
 
-
+<script src="../js/main.js"></script>
 </body>
 
 </html>
