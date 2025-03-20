@@ -44,6 +44,11 @@ header .nav-contain nav ul li a {
   color: white;
   font-family: "Hades";
   font-size: 3rem;
+  transition: all 0.5s ease;
+}
+header .nav-contain nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(203, 139, 22);
 }
 
 .hamb {
@@ -60,6 +65,20 @@ header .nav-contain nav ul li a {
   background-color: red;
   margin-top: 10px;
   height: 2px;
+  transition: all 0.8s ease;
+}
+
+.active li:nth-of-type(1) {
+  transform: translate(0, 11px) rotate(45deg);
+}
+.active li:nth-of-type(2) {
+  opacity: 0;
+}
+.active li:nth-of-type(3) {
+  transform: translate(0, -11px) rotate(-45deg);
+}
+.active + .nav-contain {
+  opacity: 1;
 }
 
 main section:nth-of-type(1) section:nth-of-type(1) {
@@ -334,18 +353,4 @@ main section h2 {
 }
 main section:nth-of-type(1) h2 {
   border: solid 1px grey;
-  transition: all 0.8s ease;
-}
-
-.active li:nth-of-type(1) {
-  transform: translate(0, 11px) rotate(45deg);
-}
-.active li:nth-of-type(2) {
-  opacity: 0;
-}
-.active li:nth-of-type(3) {
-  transform: translate(0, -11px) rotate(-45deg);
-}
-.active + .nav-contain {
-  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
