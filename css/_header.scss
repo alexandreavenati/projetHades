@@ -13,21 +13,27 @@ header {
         left: 5%;
     }
 
-    div:nth-of-type(2) {
-        width: 3%;
+    .nav-contain {
         position: absolute;
-        top: 10%;
-        right: 6%;
+        right: 8%;
+        top: 20%;
+        opacity: 0;
 
-        ul {
-            list-style: none;
+        nav {
+            ul {
+                li {
+                    margin-top: 15px;
 
-            li {
-                background-color: red;
-                margin-top: 10px;
-                height: 2px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: "Hades";
+                        font-size: 3rem;
+                    }
+                }
             }
         }
     }
 }
 
+@import '_hamb.scss';

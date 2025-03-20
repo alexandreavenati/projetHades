@@ -14,7 +14,7 @@
     <?php require_once('partial/index-header.php'); ?>
 </header>
 
-
+<script src="../js/main.js"></script>
 </body>
 
 </html>
