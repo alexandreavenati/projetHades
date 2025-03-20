@@ -1,5 +1,5 @@
 .hamb {
-    width: 3%;
+    width: 4%;
     position: absolute;
     top: 10%;
     right: 6%;
@@ -10,7 +10,7 @@
 
         li {
             background-color: red;
-            margin-top: 10px;
+            margin-top: 18px;
             height: 2px;
             transition: all .8s ease;
         }
@@ -19,7 +19,7 @@
 
 .active {
     li:nth-of-type(1) {
-        transform: translate(0, 11px) rotate(45deg);
+        transform: translate(0, 20px) rotate(45deg);
     }
 
     li:nth-of-type(2) {
@@ -27,7 +27,7 @@
     }
 
     li:nth-of-type(3) {
-        transform: translate(0, -11px) rotate(-45deg);
+        transform: translate(0, -20px) rotate(-45deg);
     }
 
     +.nav-contain {

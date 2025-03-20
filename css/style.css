@@ -33,10 +33,13 @@ header div:nth-of-type(1) {
 header .nav-contain {
   position: absolute;
   right: 8%;
-  top: 20%;
+  top: 25%;
   opacity: 0;
   transition: all 0.8s ease;
   z-index: -1;
+  background: rgba(11, 11, 11, 0.8);
+  border-radius: 25px;
+  padding: 15px;
 }
 header .nav-contain nav ul li {
   margin-top: 15px;
@@ -54,7 +57,7 @@ header .nav-contain nav ul li a:hover {
 }
 
 .hamb {
-  width: 3%;
+  width: 4%;
   position: absolute;
   top: 10%;
   right: 6%;
@@ -65,19 +68,19 @@ header .nav-contain nav ul li a:hover {
 }
 .hamb ul li {
   background-color: red;
-  margin-top: 10px;
+  margin-top: 18px;
   height: 2px;
   transition: all 0.8s ease;
 }
 
 .active li:nth-of-type(1) {
-  transform: translate(0, 11px) rotate(45deg);
+  transform: translate(0, 20px) rotate(45deg);
 }
 .active li:nth-of-type(2) {
   opacity: 0;
 }
 .active li:nth-of-type(3) {
-  transform: translate(0, -11px) rotate(-45deg);
+  transform: translate(0, -20px) rotate(-45deg);
 }
 .active + .nav-contain {
   opacity: 1;
