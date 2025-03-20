@@ -16,7 +16,7 @@ img {
   width: 100%;
 }
 
-header {
+header section {
   background-image: url(../img/wall.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,13 +24,13 @@ header {
   height: 100vh;
   position: relative;
 }
-header div:nth-of-type(1) {
+header section div:nth-of-type(1) {
   width: 20%;
   position: absolute;
   top: 5%;
   left: 5%;
 }
-header .nav-contain {
+header section .nav-contain {
   position: absolute;
   right: 8%;
   top: 25%;
@@ -41,19 +41,25 @@ header .nav-contain {
   border-radius: 25px;
   padding: 15px;
 }
-header .nav-contain nav ul li {
+header section .nav-contain nav ul {
+  list-style: none;
+}
+header section .nav-contain nav ul li {
   margin-top: 15px;
 }
-header .nav-contain nav ul li a {
+header section .nav-contain nav ul li a {
   text-decoration: none;
   color: white;
   font-family: "Hades";
   font-size: 3rem;
   transition: all 0.5s ease;
 }
-header .nav-contain nav ul li a:hover {
+header section .nav-contain nav ul li a:hover {
   text-decoration: underline;
   color: rgb(203, 139, 22);
+}
+header > div {
+  display: none;
 }
 
 .hamb {
@@ -93,24 +99,24 @@ main section:nth-of-type(1) section:nth-of-type(1) {
   height: 120vh;
   background-color: rgb(169, 23, 45);
 }
-main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) {
+main section:nth-of-type(1) section:nth-of-type(1) article {
   position: absolute;
   top: 30%;
   right: 5%;
   width: 40%;
 }
-main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) h3 {
+main section:nth-of-type(1) section:nth-of-type(1) article h3 {
   font-family: "Hades";
   font-size: 3rem;
   padding-bottom: 5%;
   text-align: center;
 }
-main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(2) p {
+main section:nth-of-type(1) section:nth-of-type(1) article p {
   font-family: "Poppins";
   font-size: 1.3rem;
   text-align: right;
 }
-main section:nth-of-type(1) section:nth-of-type(1) div:nth-of-type(1) {
+main section:nth-of-type(1) section:nth-of-type(1) div {
   position: absolute;
   top: -8%;
   left: 5%;
@@ -123,23 +129,23 @@ main section section:nth-of-type(2) {
   height: 120vh;
   position: relative;
 }
-main section section:nth-of-type(2) div:nth-of-type(1) {
+main section section:nth-of-type(2) article {
   position: absolute;
   top: 30%;
   left: 5%;
   width: 40%;
 }
-main section section:nth-of-type(2) div:nth-of-type(1) h3 {
+main section section:nth-of-type(2) article h3 {
   font-family: "Hades";
   font-size: 3rem;
   padding-bottom: 5%;
   text-align: center;
 }
-main section section:nth-of-type(2) div:nth-of-type(1) p {
+main section section:nth-of-type(2) article p {
   font-family: "Poppins";
   font-size: 1.3rem;
 }
-main section section:nth-of-type(2) div:nth-of-type(2) {
+main section section:nth-of-type(2) div {
   position: absolute;
   top: 32%;
   right: 20%;
@@ -152,24 +158,24 @@ main section section:nth-of-type(3) {
   height: 120vh;
   background-color: rgb(63, 63, 63);
 }
-main section section:nth-of-type(3) div:nth-of-type(2) {
+main section section:nth-of-type(3) article {
   position: absolute;
   top: 30%;
   right: 5%;
   width: 40%;
 }
-main section section:nth-of-type(3) div:nth-of-type(2) h3 {
+main section section:nth-of-type(3) article h3 {
   font-family: "Hades";
   font-size: 3rem;
   padding-bottom: 5%;
   text-align: center;
 }
-main section section:nth-of-type(3) div:nth-of-type(2) p {
+main section section:nth-of-type(3) article p {
   font-family: "Poppins";
   font-size: 1.3rem;
   text-align: right;
 }
-main section section:nth-of-type(3) div:nth-of-type(1) {
+main section section:nth-of-type(3) div {
   position: absolute;
   top: 32%;
   left: 19%;
@@ -182,23 +188,23 @@ main section section:nth-of-type(4) {
   height: 120vh;
   position: relative;
 }
-main section section:nth-of-type(4) div:nth-of-type(1) {
+main section section:nth-of-type(4) article {
   position: absolute;
   top: 30%;
   left: 5%;
   width: 40%;
 }
-main section section:nth-of-type(4) div:nth-of-type(1) h3 {
+main section section:nth-of-type(4) article h3 {
   font-family: "Hades";
   font-size: 3rem;
   padding-bottom: 5%;
   text-align: center;
 }
-main section section:nth-of-type(4) div:nth-of-type(1) p {
+main section section:nth-of-type(4) article p {
   font-family: "Poppins";
   font-size: 1.3rem;
 }
-main section section:nth-of-type(4) div:nth-of-type(2) {
+main section section:nth-of-type(4) div {
   position: absolute;
   top: 32%;
   right: 20%;
@@ -459,4 +465,94 @@ main section h2 {
 }
 main section:nth-of-type(1) h2 {
   border: solid 1px grey;
+}
+
+@media (min-width: 180px) and (max-width: 600px) {
+  header {
+    height: 160vh;
+  }
+  header section {
+    background-image: none;
+    background-color: rgb(235, 196, 24);
+    height: 30vh;
+  }
+  header section div:nth-of-type(1) {
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header section .hamb {
+    width: 10%;
+    top: 22%;
+  }
+  header section .hamb ul li {
+    background-color: black;
+  }
+  header section .nav-contain {
+    top: 80%;
+  }
+  header section .nav-contain nav ul li:nth-of-type(2) {
+    display: none;
+  }
+  header > div {
+    display: block;
+  }
+  main > section:nth-of-type(1) section article {
+    top: 0;
+  }
+  main > section:nth-of-type(1) section article p {
+    display: none;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(1) article {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > section:nth-of-type(1) section:nth-of-type(1) div {
+    transform: scale(1.8) translateX(-20%);
+    top: 34%;
+    left: 50%;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(2) article {
+    top: 3%;
+    left: 45%;
+    transform: translateX(-50%);
+  }
+  main > section:nth-of-type(1) section:nth-of-type(2) div {
+    transform: scale(2.1);
+    top: 41%;
+    right: 28%;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(3) article {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > section:nth-of-type(1) section:nth-of-type(3) div {
+    transform: scale(2);
+    top: 42%;
+    left: 25%;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(4) {
+    height: 100vh;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(4) article {
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > section:nth-of-type(1) section:nth-of-type(4) article p {
+    display: block;
+    margin-top: 10%;
+  }
+  main > section:nth-of-type(1) section:nth-of-type(4) > div {
+    display: none;
+  }
+  main > section:nth-of-type(2) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
